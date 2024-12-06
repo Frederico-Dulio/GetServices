@@ -27,6 +27,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="login/style.css" rel="stylesheet">
 
 </head>
 
@@ -46,7 +47,7 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#">Seja um profissional</a></li>
           <li><a href="#about">Como funciona</a></li>
-          <li><a href="#">Entrar</a></li>
+          <li><a href="" id="form-open" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Entrar</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -55,6 +56,34 @@
   </header>
 
   <main class="main">
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-7 text-center w-100" id="staticBackdropLabel">Entrar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="" method="post">
+            <div class="modal-body">
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="exemplo@gmail.com">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Senha">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-outline-success">Entrar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
@@ -184,7 +213,7 @@
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
               <i class="bi bi-car-front""></i>
-              <h4 class="d-none d-lg-block">Auto</h4>
+              <h4 class=" d-none d-lg-block">Auto</h4>
             </a>
           </li>
           <li class="nav-item col-3">
@@ -478,8 +507,8 @@
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="logo/GuardaSol.jpeg" title="App 1"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="logo/GuardaSol.jpeg" title="App 1" data-gallery="portfolio-gallery-app"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
@@ -490,9 +519,8 @@
               <div class="portfolio-info">
                 <h4>Product 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="logo/Card.jpg" title="Product 1"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
+                <a href="logo/Card.jpg" title="Product 1" data-gallery="portfolio-gallery-product"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
@@ -503,9 +531,8 @@
               <div class="portfolio-info">
                 <h4>Branding 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="logo/passe.jpeg" title="Branding 1"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
+                <a href="logo/passe.jpeg" title="Branding 1" data-gallery="portfolio-gallery-branding"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
@@ -516,8 +543,8 @@
               <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="logo/porta chave.jpg" title="App 2"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="logo/porta chave.jpg" title="App 2" data-gallery="portfolio-gallery-app"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
@@ -528,9 +555,8 @@
               <div class="portfolio-info">
                 <h4>Product 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="logo/phone 2.jpg" title="Product 2"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
+                <a href="logo/phone 2.jpg" title="Product 2" data-gallery="portfolio-gallery-product"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
@@ -541,9 +567,8 @@
               <div class="portfolio-info">
                 <h4>Branding 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="logo/fita.jpeg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
+                <a href="logo/fita.jpeg" title="Branding 2" data-gallery="portfolio-gallery-branding"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
@@ -554,8 +579,8 @@
               <div class="portfolio-info">
                 <h4>App 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="logo/Cropped_T-Shirt_Mockup1.jpg" title="App 3"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="logo/Cropped_T-Shirt_Mockup1.jpg" title="App 3" data-gallery="portfolio-gallery-app"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
@@ -566,9 +591,8 @@
               <div class="portfolio-info">
                 <h4>Product 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="logo/Aplicativo01.png" title="Product 3"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
+                <a href="logo/Aplicativo01.png" title="Product 3" data-gallery="portfolio-gallery-product"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
@@ -579,9 +603,8 @@
               <div class="portfolio-info">
                 <h4>Branding 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="logo/phone 2.jpg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
+                <a href="logo/phone 2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding"
+                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i
                     class="bi bi-link-45deg"></i></a>
               </div>
@@ -1121,20 +1144,10 @@
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="telefone" placeholder="EX: 923 999 999" required="">
                 </div>
-                
-                <!-- <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
-                </div> -->
-
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">A sua mensagem foi enviada, obrigada!</div>
-
                   <button type="submit">Cadastre-se</button>
                 </div>
 
@@ -1194,6 +1207,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="login/script.js"></script>
 
 </body>
 
