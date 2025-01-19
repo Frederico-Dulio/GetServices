@@ -772,21 +772,21 @@ section,
 .hero .wave1 use {
   animation: move-forever1 10s linear infinite;
   animation-delay: -2s;
-  fill: var(--default-color);
+  fill: #7B0205;
   opacity: 0.6;
 }
 
 .hero .wave2 use {
   animation: move-forever2 8s linear infinite;
   animation-delay: -2s;
-  fill: var(--default-color);
+  fill: #7B0205;
   opacity: 0.4;
 }
 
 .hero .wave3 use {
   animation: move-forever3 6s linear infinite;
   animation-delay: -2s;
-  fill: var(--default-color);
+  fill: #7B0205;
 }
 
 @keyframes move-forever1 {
